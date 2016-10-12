@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+  <a-scene>
+    <a-assets>
+      <img id="streets" src="img/twilight-street.jpg">
+      <img id="txMetal" src="img/black-metal-texture.jpg">
+      <img id="txWooden" src="img/wooden-box-texture.jpg">
+    </a-assets>
+    <a-box width="1" height="1" depth="1" position="5 1 3" src="#txMetal" rotation="0 55 0">
+      <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
+    </a-box>
+    <a-camera postiton="0 7 0">
+      <a-cursor color="#FF0000" />
+    </a-camera>
+    <a-sky src="#streets" color="#AA0000"></a-sky>
+  </a-scene>
+  <script src="js/main.js"></script>
+  </body>
+</html>
