@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+  <a-scene>
+    <a-assets>
+      <img id="streets" src="img/twilight-street.jpg">
+      <img id="txMetal" src="img/black-metal-texture.jpg">
+      <img id="txWooden" src="img/wooden-box-texture.jpg">
+      <img id="door" src="img/wooden-door-with-glass.jpg">
+      <!--<a-asset-item id="r8-model" src="models/audi-r8-obj/r8_gt_obj.obj" ></a-asset-item>-->
+      <!--<a-asset-item id="r8-texture" src="models/audi-r8-obj/r8_gt_obj.mtl"></a-asset-item>-->
+    </a-assets>
+
+    <!--roght side of the door -->
+    <a-box width="1" height="1" depth="1" position="4 0.5 3.5" src="#txWooden" rotation="0 55 0"></a-box>
+    <a-box width="1" height="1" depth="1" position="4 1.5 3.5" src="#txWooden" rotation="0 55 0">
+      <!--<a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>-->
+    </a-box>
+    <a-box width="1" height="1" depth="1" position="4 2.5 3.5" src="#txWooden" rotation="0 55 0"></a-box>
+    <a-box width="1" height="1" depth="1" position="4 3.5 3.5" src="#txWooden" rotation="0 55 0"></a-box>
+
+    <!--top of the door -->
+    <a-box width="1" height="1" depth="1" position="4.6 3.5 2.698" src="#txWooden" rotation="0 55 0"></a-box>
+    <a-box width="1" height="1" depth="1" position="5.2 3.5 1.9" src="#txWooden" rotation="0 55 0"></a-box>
+
+    <!-- left side of the door -->
+    <a-box width="1" height="1" depth="1" position="5.8 3.5 1.1" src="#txWooden" rotation="0 55 0"></a-box>
+    <a-box width="1" height="1" depth="1" position="5.8 2.5 1.1" src="#txWooden" rotation="0 55 0"></a-box>
+    <a-box width="1" height="1" depth="1" position="5.8 1.5 1.1" src="#txWooden" rotation="0 55 0"></a-box>
+    <a-box width="1" height="1" depth="1" position="5.8 0.5 1.1" src="#txWooden" rotation="0 55 0"></a-box>
+
+    <!-- gate it self -->
+    <a-box id="box-door" color="tomato" depth="0.2" height="3" width="2"position="4.9 1.5 2.4" rotation="0 55 0" src="#door">
+      <a-animation attribute="rotation" begin="click" repeat="0" to="0 225 0"></a-animation>
+    </a-box>
+
+    <!-- some random circle expriments -->
+    <!-- <a-sphere position="1 1 1" color="#F00" radius="50"></a-sphere> -->
+    <a-sphere position="0 1.25 -1" radius="1.25" color="#EF2D5E" material="" geometry="" rotation="" scale="" visible=""></a-sphere>
+
+    <!--a-obj-model position="5 1 3" src="#r8-model" mtl="#r8-texture"></a-obj-model>-->
+    <a-camera postiton="0 7 0">
+      <a-cursor color="#FFAA22" />
+    </a-camera>
+    <a-sky src="#streets"></a-sky>
+  </a-scene>
+  <script src="js/main.js"></script>
+  </body>
+</html>
