@@ -12,14 +12,25 @@
       <img id="streets" src="img/twilight-street.jpg">
       <img id="txMetal" src="img/black-metal-texture.jpg">
       <img id="txWooden" src="img/wooden-box-texture.jpg">
+      <!--<a-asset-item id="r8-model" src="models/audi-r8-obj/r8_gt_obj.obj" ></a-asset-item>-->
+      <!--<a-asset-item id="r8-texture" src="models/audi-r8-obj/r8_gt_obj.mtl"></a-asset-item>-->
     </a-assets>
-    <a-box width="1" height="1" depth="1" position="5 1 3" src="#txMetal" rotation="0 55 0">
-      <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
+    
+    <!--roght side of the door -->
+    <a-box width="1" height="1" depth="1" position="4 0.5 3.5" src="#txWooden" rotation="0 55 0"></a-box>
+    <a-box width="1" height="1" depth="1" position="4 1.5 3.5" src="#txWooden" rotation="0 55 0">
+      <!--<a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>-->
     </a-box>
+    <a-box width="1" height="1" depth="1" position="4 2.5 3.5" src="#txWooden" rotation="0 55 0"></a-box>
+
+    <!--top of the door -->
+    <a-box width="1" height="1" depth="1" position="4.5 2.5 3.2" src="#txWooden" rotation="0 55 0"></a-box>
+
+    <!--a-obj-model position="5 1 3" src="#r8-model" mtl="#r8-texture"></a-obj-model>
     <a-camera postiton="0 7 0">
       <a-cursor color="#FF0000" />
-    </a-camera>
-    <a-sky src="#streets" color="#AA0000"></a-sky>
+    </a-camera>-->
+    <a-sky src="#streets"></a-sky>
   </a-scene>
   <script src="js/main.js"></script>
   </body>
