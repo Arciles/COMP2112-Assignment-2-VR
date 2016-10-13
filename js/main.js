@@ -3,6 +3,8 @@
  */
 
 /**
+=======
+>>>>>>> d0837f1c8469c9e029adeba87ac7b8d94feec909
 var box = document.querySelector('a-box');
 
 box.addEventListener('mouseenter', function () {
@@ -12,6 +14,7 @@ box.addEventListener('mouseenter', function () {
         z: 5
     });
     box.setAttribute('src', "#txWooden");
+<<<<<<< HEAD
 });
 
 var door = document.querySelector('#box-door');
