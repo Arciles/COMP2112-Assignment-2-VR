@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # COMP2112 - Advanced Client-Side Scripting
-=======
-# COMP2112 - Advanced Client-Side Scripting 
->>>>>>> d0837f1c8469c9e029adeba87ac7b8d94feec909
 
 ## Assignment 2 – Multimedia Demonstration Markdown
 
